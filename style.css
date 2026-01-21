@@ -1,0 +1,180 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Domine:wght@400..700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+header {
+    padding: 55px;
+    background: forestgreen url(images/forest.jpg) center top no-repeat;
+    background-size: cover;
+}
+
+header > h1 {
+    text-align: center;
+    font-family: Courgette, cursive; 
+    color: white;
+    background-color: rgba(0, 0, 0, 0.301);
+    font-size: 2.799em;
+    padding: 24px 12px;
+    border-radius: 36px;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.286);
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.503);
+}
+
+header a {
+    text-decoration: none;
+    font-size: 1.5em;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.125);
+    border: 0px solid olive;
+    border-radius: 40%;
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    color: white;
+    padding: 12px;
+    transition: all 0.2s ease-in-out;
+}
+
+
+header > a:hover {
+    font-size: 1.8em;
+    background-color: rgba(0, 0, 0, 0.519);
+    border: 1px solid white;
+}
+
+main {
+    padding: 56px ;
+}
+
+main h2 {
+    font-family: Domine, Times, serif;
+    color: rgb(77, 107, 0);
+}
+
+main strong {
+    color: rgb(53, 69, 0);
+}
+
+main div.image {
+    background: lightgray center top no-repeat;
+    background-size: cover;
+    width: 30%;
+    min-width: 250px;
+}
+
+div#diana-img {
+    background-image: url(images/diana.jpeg);
+}
+
+div#toshio-img {
+    background-image: url(images/toshio.jpeg);
+}
+
+div#medina-img {
+    background-image: url(images/medina.jpeg);
+}
+
+div#rocha-img {
+    background-image: url(images/alice-rocha.jpeg);
+    background-position: center center;
+}
+
+div#alice-img {
+    background-image: url(images/alice-m.jpeg);
+}
+
+div#luara-img {
+    background-image: url(images/luara.jpeg);
+}
+
+em#diana {
+    color: blue;
+    font-family: Courgette, cursive;
+    font-size: 1.2em;
+}
+
+em#toshio {
+    color: rgb(0, 171, 145);
+    font-family: Courgette, cursive;
+    font-size: 1.2em;
+}
+
+em#medina {
+    color: rgb(230, 79, 250);
+    font-family: Courgette, cursive;
+    font-size: 1.2em;
+}
+
+em#rocha {
+    color: rgb(101, 159, 204);
+    font-family: Courgette, cursive;
+    font-size: 1.2em;
+}
+
+em#alice {
+    color: rgb(212, 46, 132);
+    font-family: Courgette, cursive;
+    font-size: 1.2em;
+}
+
+em#luara {
+    color: rgb(255, 98, 0);
+    font-family: Courgette, cursive;
+    font-size: 1.2em;
+}
+
+main p {
+    margin: 24px 12px;
+    line-height: 1.5em;
+}
+
+main h2 {
+    text-align: center;
+    font-size: 2em;
+}
+
+main div.info {
+    background-color: rgb(240, 240, 240);
+    width: 100%;
+    padding: 16px;
+}
+
+main > section {
+    display: flex;
+    margin-bottom: 108px;
+    box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.151);
+}
+
+
+
+footer {
+    background-color: rgb(194, 216, 142);
+    padding: 16px 12px 56px 12px;
+    border-top: 3px solid rgb(133, 154, 82);
+}
+
+footer > p {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(254, 254, 254);
+}
+
+footer a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
