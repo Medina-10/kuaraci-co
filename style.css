@@ -1,23 +1,26 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Domine:wght@400..700&display=swap');
 
-
+/* ====== Globais ====== */
 * {
     margin: 0;
     padding: 0;
 }
 
+/* ====== Body ====== */
 body {
     font-family: Arial, Helvetica, sans-serif;
 
 }
 
+/* ====== Header ====== */
 header {
     padding: 55px;
     background: forestgreen url(images/forest.jpg) center top no-repeat;
     background-size: cover;
 }
 
+/* Título */
 header > h1 {
     text-align: center;
     font-family: Courgette, cursive; 
@@ -30,6 +33,7 @@ header > h1 {
     text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.503);
 }
 
+/* Link menu */
 header a {
     text-decoration: none;
     font-size: 1.5em;
@@ -45,27 +49,39 @@ header a {
     padding: 12px;
     transition: all 0.2s ease-in-out;
 }
-
-
 header > a:hover {
     font-size: 1.8em;
     background-color: rgba(0, 0, 0, 0.519);
     border: 1px solid white;
 }
 
+/* ====== Header ====== */
 main {
     padding: 56px ;
 }
 
+/*  ====== Lugar que abriga cada um ====== */
+main > section {
+    display: flex;
+    margin-bottom: 108px;
+    box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.151);
+}
+
+
+/* Títulos de cada pessoa */
 main h2 {
     font-family: Domine, Times, serif;
     color: rgb(77, 107, 0);
+    text-align: center;
+    font-size: 2em;
 }
-
+ /* Negrito */
 main strong {
     color: rgb(53, 69, 0);
 }
 
+
+/* ====== Imagem da seção ====== */
 main div.image {
     background: lightgray center top no-repeat;
     background-size: cover;
@@ -98,6 +114,7 @@ div#luara-img {
     background-image: url(images/luara.jpeg);
 }
 
+/* Fala de cada um */
 em#diana {
     color: blue;
     font-family: Courgette, cursive;
@@ -134,30 +151,22 @@ em#luara {
     font-size: 1.2em;
 }
 
+/* Textos com as informações */
 main p {
     margin: 24px 12px;
     line-height: 1.5em;
 }
 
-main h2 {
-    text-align: center;
-    font-size: 2em;
-}
-
+/* Caixa da informação */
 main div.info {
     background-color: rgb(240, 240, 240);
     width: 100%;
     padding: 16px;
 }
 
-main > section {
-    display: flex;
-    margin-bottom: 108px;
-    box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.151);
-}
 
 
-
+/* ====== Footer ====== */
 footer {
     background-color: rgb(194, 216, 142);
     padding: 16px 12px 56px 12px;
