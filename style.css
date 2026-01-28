@@ -3,19 +3,19 @@
 
 /* ====== Globais ====== */
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
 /* ====== Body ====== */
 body {
     font-family: Arial, Helvetica, sans-serif;
-
 }
 
 /* ====== Header ====== */
 header {
-    padding: 55px;
+    padding: 56px;
     background: forestgreen url(images/forest.jpg) center top no-repeat;
     background-size: cover;
 }
@@ -36,26 +36,36 @@ header > h1 {
 /* Link menu */
 header a {
     text-decoration: none;
-    font-size: 1.5em;
-    font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
-    background-color: rgba(0, 0, 0, 0.125);
-    border: 0px solid olive;
-    border-radius: 40%;
     position: absolute;
+    border-radius: 45%;
     top: 6px;
     right: 6px;
-    color: white;
-    padding: 12px;
-    transition: all 0.2s ease-in-out;
-}
-header > a:hover {
-    font-size: 1.8em;
-    background-color: rgba(0, 0, 0, 0.519);
-    border: 1px solid white;
 }
 
-/* ====== Header ====== */
+/* Menu em si */
+span#menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 45%;
+    background-color: rgba(0, 0, 0, 0.125);
+    border: 0px solid olive;
+    color: white;
+    border-radius: 40%;
+    padding: 12px;
+    transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+span#menu:hover {
+    font-size: 1.6em;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.384);
+    background-color: rgba(0, 0, 0, 0.355);
+    border: 1px solid rgba(255, 255, 255, 0.481);
+    box-shadow: 4px 4px 12px 0px rgba(255, 255, 255, 0.212);
+}
+
+/* ====== Main ====== */
 main {
     padding: 56px ;
 }
@@ -63,8 +73,12 @@ main {
 /*  ====== Lugar que abriga cada um ====== */
 main > section {
     display: flex;
-    margin-bottom: 108px;
+    height: 530px;
+    min-width: 630px;
+    max-width: 800px;
+    margin: 0px auto 108px auto;
     box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.151);
+    border-radius: 12px;
 }
 
 
@@ -82,37 +96,14 @@ main strong {
 
 
 /* ====== Imagem da seção ====== */
-main div.image {
-    background: lightgray center top no-repeat;
-    background-size: cover;
+img {
     width: 30%;
-    min-width: 250px;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 12px 0px 0px 12px;
 }
 
-div#diana-img {
-    background-image: url(images/diana.jpeg);
-}
-
-div#toshio-img {
-    background-image: url(images/toshio.jpeg);
-}
-
-div#medina-img {
-    background-image: url(images/medina.jpeg);
-}
-
-div#rocha-img {
-    background-image: url(images/alice-rocha.jpeg);
-    background-position: center center;
-}
-
-div#alice-img {
-    background-image: url(images/alice-m.jpeg);
-}
-
-div#luara-img {
-    background-image: url(images/luara.jpeg);
-}
 
 /* Fala de cada um */
 em#diana {
@@ -158,12 +149,12 @@ main p {
 }
 
 /* Caixa da informação */
-main div.info {
-    background-color: rgb(240, 240, 240);
+main article.info {
+    background-color: rgb(247, 247, 247);
     width: 100%;
     padding: 16px;
+    border-radius: 0px 12px 12px 0px;
 }
-
 
 
 /* ====== Footer ====== */
