@@ -16,7 +16,7 @@ body {
 /* ====== Header ====== */
 header {
     padding: 56px;
-    background: forestgreen url(images/forest.jpg) center top no-repeat;
+    background: forestgreen url(../images/forest.jpg) center top no-repeat;
     background-size: cover;
 }
 
@@ -73,7 +73,6 @@ main {
 /*  ====== Lugar que abriga cada um ====== */
 main > section {
     display: flex;
-    height: 530px;
     min-width: 630px;
     max-width: 800px;
     margin: 0px auto 108px auto;
@@ -98,7 +97,7 @@ main strong {
 /* ====== Imagem da seção ====== */
 img {
     width: 30%;
-    height: 100%;
+    height: 530px;
     object-fit: cover;
     object-position: center top;
     border-radius: 12px 0px 0px 12px;
@@ -149,8 +148,13 @@ main p {
 }
 
 /* Caixa da informação */
+
+.out-title {
+    display: none;
+}
+
 main article.info {
-    background-color: rgb(247, 247, 247);
+    background-color: rgb(241, 241, 241);
     width: 100%;
     padding: 16px;
     border-radius: 0px 12px 12px 0px;

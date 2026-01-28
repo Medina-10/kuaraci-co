@@ -1,0 +1,33 @@
+@media (max-width: 760px) {
+    main {
+        padding: 56px 8px;
+    }
+    
+    main > section {
+        flex-flow: column nowrap;
+        align-items: center;
+        min-width: 0px;
+        background-color: rgb(241, 241, 241);
+    }
+
+    main > section h2 {
+        display: none;
+    }
+
+    .out-title {
+        display: block;
+        margin-top: 24px;
+    }
+
+    img {
+        height: 300px;
+        width: 300px;
+        margin: 36px;
+        border-radius: 12px;
+    }
+
+    img#luara {
+        object-position: center center;
+    }
+
+}
